@@ -1,0 +1,11 @@
+php_value auto_prepend_file "C:/wamp64/www/lab7/traffic_logger.php"
+
+Options -MultiViews
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^ index.php [QSA,L]

@@ -1,0 +1,12 @@
+http://localhost/lab7/ - Головна сторінка проєкту
+http://localhost/lab7/cache - Завдання 1: звичайна кешована сторінка, створює cache.html
+http://localhost/lab7/cache?notfound=1 - Завдання 1: перевірка 404, кеш не зберігається і старий cache.html видаляється
+http://localhost/lab7/rate - Завдання 2: rate limit, після більше 5 запитів за хвилину повертає 429
+http://localhost/lab7/error_handler.php - Завдання 3: звичайний запуск error_handler.php зі статусом 200
+http://localhost/lab7/error_handler.php?trigger=1 - Завдання 3: примусова фатальна помилка, має показати кастомний 500
+http://localhost/lab7/old-page - Завдання 4: редирект 301 на /new-page
+http://localhost/lab7/deprecated - Завдання 4: сторінка зі статусом 404 через redirects.json
+http://localhost/lab7/test_response.php - Завдання 5: тест класу Response
+http://localhost/lab7/traffic_logger.php - Завдання 6: службова сторінка логера запитів
+http://localhost/lab7/stats - Завдання 6: статистика запитів і 404 за останню добу
+http://localhost/lab7/random - Додаткова перевірка 404-маршруту і логування неіснуючої сторінки
